@@ -195,7 +195,7 @@
                     <script>
                         document.getElementById("button_text").onclick = function(e) {
 
-        var url = "http://localhost:3000/api/payment/order"
+        var url = "https://linuxdiary-production.up.railway.app/api/payment/order"
         // alert(url);
         var params = {
             amount: 100,
@@ -323,7 +323,7 @@
         
         alert(name + " " + username);
 
-        var url = 'http://localhost:3000/api/payment/register';
+        var url = 'https://linuxdiary-production.up.railway.app/api/payment/register';
 
         var params = {
             name: name,
@@ -360,7 +360,7 @@
     }
 
     function verifyClick(e) {
-        var url = 'http://localhost:3000/api/payment/verify';
+        var url = 'https://linuxdiary-production.up.railway.app/api/payment/verify';
         var params = {
             razorpay_order_id: document.getElementById('order-id').value,
             razorpay_payment_id: document.getElementById('order-pay-id').value,
